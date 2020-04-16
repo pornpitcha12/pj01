@@ -1,0 +1,13 @@
+img.delete{
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+ }
+
+th.edit{
+   color: black;
+   background-color: #f4caca;
+ }
+td.edit-product{
+  text-align: center;
+}

@@ -1,0 +1,110 @@
+<!-- <p>delete-product works!</p> -->
+<div class="grid-container-layout">
+  <div class="grid-item-layout item1">
+    <div class="ex1-cat">หมวดหมู่</div>
+    <div class="ex2-cat">
+      <a class="op"><B>อุปกรณ์ก่อสร้าง</B></a><br>
+      <a class="op" href="#">&emsp;สี</a><br>
+      <a class="op" href="#">&emsp;ประปา</a><br>
+      <a class="op" href="#">&emsp;ไฟฟ้า</a><br>
+      <a class="op" href="#">&emsp;เครื่องมือช่าง</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item3">
+    <div class="ex1-op">ตัวเลือก</div>
+    <div class="ex2-op">
+      <a class="op" routerLink="/mystock" >สินค้าทั้งหมด</a><br>
+      <a class="op" routerLink="/add-product" >เพิ่มสินค้า</a><br>
+      <a class="op" routerLink="/add-newproduct">เพิ่มสินค้าใหม่</a><br>
+      <a class="op1" >ลบสินค้า</a><br>
+      <a class="op" routerLink="/edit-product">แก้ไขสินค้า</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item2">
+    <div class="search-bar">
+       <input type="text" class="searchTerm-bar" placeholder="ค้นหาสินค้า ... ">
+       <button type="submit" class="searchButton-bar">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div>
+
+
+  <!-- <div class="grid-item-layout item2"> -->
+    <div class="ex3">รายการสินค้า</div>
+
+
+    <div class="ex4">
+      <div class="table-1">
+      <table>
+        <tr>
+          <th>รหัสสินค้า</th>
+          <th>ยี่ห้อ</th>
+          <th>ชื่อ</th>
+          <th>ขนาด</th>
+          <th>สี</th>
+          <th>จำนวน</th>
+          <th>วันหมดอายุ</th>
+          <th>อื่นๆ</th>
+          <th>ต้นทุน</th>
+          <th>ราคาขาย</th>
+          <th>วันสินค้าเข้า</th>
+          <th>โรงงาน</th>
+          <th class="delete">ลบสินค้า</th>
+
+        </tr>
+        <tr>
+          <td>A00001</td>
+          <td>Loren em</td>
+          <td>pipe</td>
+          <td>1/2 นิ้ว</td>
+          <td>ฟ้า</td>
+          <td>20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>30</td>
+          <td>45</td>
+          <td>20/02/19</td>
+          <td>ช.วุฒิกร</td>
+          <td><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>A00001</td>
+          <td>Loren em</td>
+          <td>pipe</td>
+          <td>1/2 นิ้ว</td>
+          <td>ฟ้า</td>
+          <td>20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>30</td>
+          <td>45</td>
+          <td>20/02/19</td>
+          <td>ช.วุฒิกร</td>
+          <td><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>A00001</td>
+          <td>Loren em</td>
+          <td>pipe</td>
+          <td>1/2 นิ้ว</td>
+          <td>ฟ้า</td>
+          <td>20</td>
+          <td>-</td>
+          <td>-</td>
+          <td>30</td>
+          <td>45</td>
+          <td>20/02/19</td>
+          <td>ช.วุฒิกร</td>
+          <td><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+
+
+      </table>
+      </div>
+    </div>
+  </div>
+  <!-- <button (click)="openModal()">Open Dialog</button> -->
+
+</div>

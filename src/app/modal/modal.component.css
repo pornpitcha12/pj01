@@ -1,0 +1,26 @@
+.host{
+  display:block;
+  width: 500px;
+  height: 500px;
+  padding:20px;
+}
+
+.mat-dialog-container {
+  display: block;
+  padding: 24px;
+  border-radius: 4px;
+  box-sizing: border-box;
+  overflow: auto;
+  outline: 0;
+  width: 500px;
+  height: 500px;
+  /* min-height: inherit;
+  max-height: inherit; */
+}
+
+.plan{
+  width: 545px;
+  height: 545px;
+  text-align: center;
+  justify-content: center;
+}

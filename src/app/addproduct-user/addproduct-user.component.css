@@ -1,0 +1,130 @@
+a.op1{
+    font-family: TH Sarabun New;
+    font-size: 24px;
+    color: #3B4F85;
+    line-height: 1.5;
+    padding-left: 10px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  
+  .grid-container-add {
+    display: grid;
+    grid-gap: 30px;
+    /* background-color: #fff; */
+    padding: 20px 20px 20px 20px ;
+    grid-template-columns: 300px auto auto;
+    grid-template-rows: auto;
+    grid-auto-flow: column;
+  
+  }
+  
+  .grid-item-add {
+    background-color: transparent;
+  }
+  
+  .item-add1 {
+    grid-column: 1 ;
+    grid-row: 1 ;
+    text-align: center;
+    /* background-color: #F7F7F7; */
+  }
+  
+  .item-add2 {
+    grid-column: 2 ;
+    grid-row: 1  ;
+    /* background-color: #F7F7F7; */
+  
+  }
+  .item-add3 {
+    grid-column: 3 ;
+    grid-row: 1;
+    /* background-color: #F7F7F7; */
+  }
+  
+  img.imgAdd {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    border: 2px solid #000;
+  
+    /* margin: 10px; */
+  }
+  
+  a.input{
+    font-family: TH Sarabun New;
+    font-size: 24px;
+    color: #000;
+    font-weight: bold;
+    /* line-height: 30px; */
+    /* padding-left: 10px; */
+    /* margin: 5px; */
+  }
+  
+  a.img{
+    font-family: TH Sarabun New;
+    font-size: 22px;
+    color: #3B4F85;
+    text-decoration: underline;
+    text-align: center;
+  }
+  
+  input[type=text-add], select {
+    width: 100%;
+    height: 30px;
+    padding: 5px 5px;
+    margin: 0px 0px 10px 0px;
+    display: inline-block;
+    border: 1px solid #000;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'TH Sarabun New';
+    font-size: 20px;
+  
+  }
+  
+  button[type=submit-add] {
+    width: 80px;
+    /* height: 40px; */
+    border: 2px solid #3d3d3d;
+    background: #B8E8CA;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    font-family:'TH Sarabun New';
+    /* padding: 4px 15px 0px 25px; */
+    margin-top: 15px;
+    float: right;
+  }
+  
+  a.reset[type=reset] {
+    /* width: 50px; */
+    /* border: 2px solid #3d3d3d; */
+    color: red;
+    text-align: right;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    font-size: 24px;
+    font-family:'TH Sarabun New';
+    padding: 4px 15px 0px 25px;
+    margin-top: 15px;
+    /* float: right; */
+  }
+  
+  input[type=reset] {
+    width: 80px;
+    /* height: 30px; */
+    border: 2px solid #3d3d3d;
+    background: #f4caca;
+    border-radius: 10px 10px 10px 10px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 24px;
+    font-family:'TH Sarabun New';
+    /* padding: 4px 15px 0px 25px; */
+    margin-top: 15px;
+    margin-right: 20px;
+    float: right;
+  }
+  

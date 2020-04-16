@@ -1,0 +1,62 @@
+<!-- Toolbar -->
+<!-- <app-header></app-header> -->
+<div class="grid-container-findname">
+	<div class="grid-item-Fimg item0">
+        <div class="webcam">
+			<webcam [height]="360" [width]="360" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam>
+			<br>
+			<button id="snapshotBtn" (click)="triggerSnapshot();">Take A Snapshot</button>
+		  </div>
+  </div>
+
+	<!-- search bar  -->
+	<div class="grid-item-findname item1">
+	  <div class="search-bar">
+		<a class="search-button" routerLink="/findproduct">ค้นหาด้วยชื่อ/บาร์โค้ด</a>
+		   <img routerLink="/find-image" class="Fimg-2" src="../assets/img/cam2.png">
+	  </div>
+	</div>
+
+<!-- <div style="text-align:left">
+	<div>
+	  <p>{{seconds}}</p>
+	  <webcam [height]="400" [width]="400" [trigger]="triggerObservable" (imageCapture)="handleImage($event)"></webcam>
+	  <br/>
+	  <button id="snapshotBtn" (click)="triggerSnapshot();">Take A Snapshot</button>
+	</div>
+</div> -->
+
+<div class="grid-item-findname item2">
+	<div class="ex3-findname">ข้อมูลสินค้า</div>
+	 <div class="ex4-findname">
+		<div class="grid-content">
+			<div class="grid-item-content item1-c">
+				  <a class="nameHead">ชื่อสินค้า:</a><a class="nameSub">บอลวาว์ล PVC</a><br>
+				  <a class="nameHead">ยี่ห้อ:</a><a class="nameSub">SCG</a><br>
+				  <a class="nameHead">ขนาด:</a><a class="nameSub">1"</a><br>
+				  <a class="nameHead">รายละเอียดอื่นๆ:</a><a class="nameSub"></a><br>
+
+				  <a class="nameHead">ชื่อโรงงาน:</a><a class="nameSub"></a><br>
+				  <a class="nameHead">ราคาขาย:</a><a class="nameSub">100</a><br>
+				  <a class="nameHead">สินค้าในคลัง:</a><a class="nameSub">20</a>
+  			</div>
+			<div class="grid-item-content item2-c">
+			  <a class="nameHead">Barcode:</a><a class="nameSub">8858721533848</a><br>
+			  <a class="nameHead">ประเภท:</a><a class="nameSub">อุปกรณ์ปะปา</a><br>
+			  <a class="nameHead">สี:</a><a class="nameSub">ฟ้า</a><br>
+			  <a class="nameHead">ราคาทุน:</a><a class="nameSub">59</a><br>
+			  <a class="nameHead">ตำเเหน่งสินค้า:</a><a class="nameSub"></a><br><br>
+			  <a herf="#" class="plan" (click)="openDialog()" >คลิกเพื่อดูแผนผัง</a>
+			 </div>
+			</div>
+	 	</div>
+</div>
+
+<div class="grid-item-findname item3">
+  <div class="snapshot" *ngIf="webcamImage">
+	<img [height]="120" [width]="220" [src]="webcamImage.imageAsDataUrl"/>
+	<h2>Nice one!</h2>
+  </div>
+</div>
+
+</div>

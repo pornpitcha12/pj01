@@ -1,0 +1,115 @@
+<!-- <p>mystock2-user works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header-user></app-header-user> -->
+<div class="grid-container-layout">
+  <div class="grid-item-layout item1">
+    <div class="ex1-cat">หมวดหมู่</div>
+    <div class="ex2-cat">
+      <a class="op"><B>อุปกรณ์ก่อสร้าง</B></a><br>
+      <a class="op" href="#">&emsp;สี</a><br>
+      <a class="op" href="#">&emsp;ประปา</a><br>
+      <a class="op" href="#">&emsp;ไฟฟ้า</a><br>
+      <a class="op" href="#">&emsp;เครื่องมือช่าง</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item3">
+    <div class="ex1-op">ตัวเลือก</div>
+    <div class="ex2-op">
+      <a class="op1" routerLink="/mystock2-user" >สินค้าทั้งหมด</a><br>
+      <a class="op" routerLink="/addproduct-user">เพิ่มสินค้า</a><br>
+      <a class="op" routerLink="/addnewproduct-user">เพิ่มสินค้าใหม่</a><br>
+      <!-- <a class="op" routerLink="/delete-product">ลบสินค้า</a><br> -->
+      <a class="op" routerLink="/editproduct-user">แก้ไขสินค้า</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item2">
+    <div class="search-bar">
+       <input type="text" class="searchTerm-bar" ngModel appAutofocus placeholder="ค้นหาสินค้า ... ">
+       <button type="submit" class="searchButton-bar">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div>
+
+
+  <!-- <div class="grid-item-layout item2"> -->
+    <div class="ex3">รายการสินค้า
+      <img class="sea" routerLink="/mystock-user" src="../assets/img/list.png">
+      <div class="search-container">
+        <!-- <form action="/">
+          <input type="text" placeholder="ค้นหา.." name="search">
+            <img class="sea" src="../assets/img/sea.png">
+            <img class="sea" onclick="myFunction()" src="../assets/img/list.png">
+        </form>
+
+        <form id="demo-2">
+          <input type="search" placeholder="Search">
+          <img class="sea" type="submit" src="../assets/img/sea.png">
+        </form> -->
+      </div>
+    </div>
+
+    <div class="ex4">
+      <div class="grid-container-img">
+        <div class="grid-item-img">
+          <img class="stock" src="../assets/img/73551.jpeg" >
+              <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">N66255</a><br>
+              <a class="nameHead">ชื่อ:</a><a class="nameSub">แม่สี</a><br>
+              <a class="nameHead">ราคา:</a><a class="nameSub">120</a>
+        </div>
+        <div class="grid-item-img">
+          <img class="stock" src="../assets/img/73551.jpeg" >
+              <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">N56279</a><br>
+              <a class="nameHead">ชื่อ:</a><a class="nameSub">สีเคลือบน้ำมันเงา</a><br>
+              <a class="nameHead">ราคา:</a><a class="nameSub">140</a>
+        </div>
+
+        <div class="grid-item-img">
+          <img class="stock" src="../assets/img/73551.jpeg" >
+              <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">J0591</a><br>
+              <a class="nameHead">ชื่อ:</a><a class="nameSub">สีย้อมไม้ชนิดเงา</a><br>
+              <a class="nameHead">ราคา:</a><a class="nameSub">280</a>
+        </div>
+        <div class="grid-item-img">
+          <img class="stock" src="../assets/img/73551.jpeg" >
+              <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">T106273</a><br>
+              <a class="nameHead">ชื่อ:</a><a class="nameSub">สีสเปร์ย</a><br>
+              <a class="nameHead">ราคา:</a><a class="nameSub">50</a>
+        </div>
+        <div class="grid-item-img">
+          <img class="stock" src="../assets/img/73551.jpeg" >
+              <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">ป1516173</a><br>
+              <a class="nameHead">ชื่อ:</a><a class="nameSub">กาวสารพัดประโยชน์ x-66</a><br>
+              <a class="nameHead">ราคา:</a><a class="nameSub">65</a>
+        </div>
+        <div class="grid-item-img">
+          <img class="stock" src="../assets/img/73551.jpeg" >
+              <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">T9929</a><br>
+              <a class="nameHead">ชื่อ:</a><a class="nameSub">กาวลาเท็กซ์</a><br>
+              <a class="nameHead">ราคา:</a><a class="nameSub">65</a>
+        </div>
+        <div class="grid-item-img">
+          <img class="stock" src="../assets/img/73551.jpeg" >
+              <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">M76261</a><br>
+              <a class="nameHead">ชื่อ:</a><a class="nameSub">เทปพันสายไฟ</a><br>
+              <a class="nameHead">ราคา:</a><a class="nameSub">30</a>
+        </div>
+        <div class="grid-item-img">
+          <img class="stock" src="../assets/img/73551.jpeg" >
+              <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">R16121</a><br>
+              <a class="nameHead">ชื่อ:</a><a class="nameSub">ใบเจียร</a><br>
+              <a class="nameHead">ราคา:</a><a class="nameSub">35</a>
+        </div>
+        <div class="grid-item-img">
+          <img class="stock" src="../assets/img/73551.jpeg" >
+              <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">JK904</a><br>
+              <a class="nameHead">ชื่อ:</a><a class="nameSub">ยาแนว กันรา</a><br>
+              <a class="nameHead">ราคา:</a><a class="nameSub">35</a>
+        </div>
+
+    </div>
+  </div>
+  </div>
+
+</div>

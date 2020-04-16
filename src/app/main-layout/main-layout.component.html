@@ -1,0 +1,35 @@
+<!-- <p>main-layout works!</p> -->
+<app-header></app-header>
+
+  <div class="topnav">
+    <b><mat-icon class="material-icons hamburger"  (click)="opened = !opened">menu</mat-icon>  </b>
+      
+      <a href="#">ยินดีต้อนรับ,</a>
+  <div class="topnav-right">
+    <a class="logout" routerLink="/login">ออกจากระบบ</a>
+    <img class="topnav-right" routerLink="/profile" id="icon" src="../assets/img/user-cog-solid.png">
+  </div>
+      </div>
+  <mat-sidenav-container>	   
+        
+    <mat-sidenav class="sidenav" #sidenav mode="over" [(opened)]="opened">
+      <mat-toolbar>    
+        <mat-icon class="material-icons md-light" (click)="sidenav.toggle()">close</mat-icon> 
+      </mat-toolbar>
+      <mat-nav-list>
+      <a mat-list-item routerLink="/home">หน้าหลัก</a>
+      <a mat-list-item routerLink="/mystock">คลังสินค้า</a>
+      <a mat-list-item routerLink="/findproduct">ค้นหาสินค้า</a>
+      <a mat-list-item routerLink="/factory">โรงงาน</a>
+      <a mat-list-item routerLink="/billing">คิดเงิน</a>
+      <a mat-list-item routerLink="/dashboard">รายงาน</a>
+      <a mat-list-item routerLink="/list">รายการสั่งซื้อ</a>
+      <a mat-list-item routerLink="/employee">พนักงาน</a>
+      </mat-nav-list>
+      </mat-sidenav> 
+      <mat-sidenav-content>
+        <router-outlet></router-outlet>
+      </mat-sidenav-content>
+  </mat-sidenav-container>
+
+  

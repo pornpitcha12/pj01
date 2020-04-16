@@ -1,0 +1,108 @@
+<!-- <p>editdetailproduct-user works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header-user></app-header-user> -->
+<div class="grid-container-layout">
+  <div class="grid-item-layout item1">
+    <div class="ex1-cat">หมวดหมู่</div>
+    <div class="ex2-cat">
+      <a class="op"><B>อุปกรณ์ก่อสร้าง</B></a><br>
+      <a class="op" href="#">&emsp;สี</a><br>
+      <a class="op" href="#">&emsp;ประปา</a><br>
+      <a class="op" href="#">&emsp;ไฟฟ้า</a><br>
+      <a class="op" href="#">&emsp;เครื่องมือช่าง</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item3">
+    <div class="ex1-op">ตัวเลือก</div>
+    <div class="ex2-op">
+      <a class="op" routerLink="/mystock-user" >สินค้าทั้งหมด</a><br>
+      <a class="op" routerLink="/addproduct-user">เพิ่มสินค้า</a><br>
+      <a class="op" routerLink="/addnewproduct-user">เพิ่มสินค้าใหม่</a><br>
+      <!-- <a class="op" routerLink="/delete-product">ลบสินค้า</a><br> -->
+      <a class="op1" routerLink="/editproduct-user">แก้ไขสินค้า</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item2">
+    <!-- <div class="search-bar">
+       <input type="text" class="searchTerm-bar" placeholder="ค้นหาสินค้า ... ">
+       <button type="submit" class="searchButton-bar">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div> -->
+
+
+  <!-- <div class="grid-item-layout item2"> -->
+    <div class="ex3-edit-product">แก้ไขสินค้า</div>
+      <div class="ex4-edit-product">
+
+      <form action="" method="GET">
+        <div class="grid-container-editproduct">
+          <div class="item-editproduct1">
+            <img class="imgEdit" src="../assets/img/7357.jpg" >
+            <br><a class="img">แก้ไขรูปภาพ</a>
+          </div>
+
+          <!-- ต้องดึงมาโชว์เลย -->
+
+          <div class="item-editproduct2">
+
+              <a class="input">รหัสสินค้า</a><br>
+              <input type="text-editproduct-block" id="prodectNo" name="product_no" readonly placeholder="รหัสสินค้า .."><br>
+              <a class="input">ชื่อสินค้า</a><br>
+              <input type="text-editproduct" id="productName" name="product_name" placeholder="ชื่อสินค้า .."><br>
+              <a class="input">ขนาด</a><br>
+              <input type="text-editproduct" id="size" name="size" placeholder="ขนาด .."><br>
+              <a class="input">รายละเอียดอื่นๆ</a><br>
+              <input type="text-editproduct" id="detail" name="detail" placeholder="อื่นๆ .."><br>
+              <a class="input">ราคาทุน</a><br>
+              <input type="text-editproduct" id="cost" name="cost" placeholder="ราคาทุน .."><br>
+              <a class="input">ตำแหน่งสินค้า</a><br>
+              <select id="location" name="location" placeholder="ตำแหน่งสินค้า ..">
+                <option type="text-editproduct" value="none" >ตำแหน่งสินค้า ..</option>
+                <option value="A01" >A01</option>
+                <option value="A02" >A02</option>
+              </select>
+              <a class="input">ประเภทสินค้า</a><br>
+              <select id="category" name="category" placeholder="ประเภทสินค้า ..">
+                <option type="text-editproduct" value="none" >ประเภทสินค้า ..</option>
+                <option value="plumbing" >อุปกรณ์ปะปา</option>
+                <option value="electronic" >อุปกรณ์ไฟฟ้า</option>
+                <option value="construction" >อุปกรณ์ก่อสร้าง</option>
+                <option value="craftsman" >เครื่องมือช่าง</option>
+              </select>
+              
+
+
+          </div>
+          <!-- ต้องดึงมาโชว์เลย -->
+          <div class="item-editproduct3">
+              <a class="input">Barcode</a><br>
+              <input type="text-editproduct" id="barcode" name="barcode" placeholder="barcode .."><br>
+              <a class="input">ยี่ห้อ</a><br>
+              <input type="text-editproduct" id="brand" name="brand" placeholder="ยี่ห้อ .."><br>
+              <a class="input">สี</a><br>
+              <input type="text-editproduct" id="color" name="color" placeholder="สี .."><br>
+              <a class="input">โรงงานสินค้า</a><br>
+              <input type="text-editproduct" id="factory" name="factory" placeholder="โรงงานสินค้า .."><br>
+              <a class="input">ราคาขาย</a><br>
+              <input type="text-editproduct" id="price" name="price" placeholder="ราคาขาย .."><br>
+              <a class="input">วันหมดอายุ</a><br>
+              <input type="text-editproduct" id="expired" name="expired" placeholder="วันหมดอายุ .."><br>
+              <a class="input" style="color:red;">จำนวน</a><br>
+              <input type="text-editproduct" id="amount" name="amount" placeholder="จำนวน .."><br>
+
+            <!-- <a class="reset" type="reset" value="ยกเลิก">ยกเลิก</a> -->
+            <button type="submit-editproduct" value="ยืนยัน">ยืนยัน</button>
+            <input type="reset" value="ยกเลิก">
+
+          </div>
+
+        </div>
+
+      </form>
+      </div>
+
+
+</div>

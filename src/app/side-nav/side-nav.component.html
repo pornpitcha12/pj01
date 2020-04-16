@@ -1,0 +1,63 @@
+<!-- <mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #drawer class="sidenav" fixedInViewport
+      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+      [mode]="(isHandset$ | async) ? 'over' : 'side'"
+      [opened]="(isHandset$ | async) === false">
+    <mat-toolbar>Menu</mat-toolbar>
+    <mat-nav-list>
+      <a mat-list-item href="#">Link 1</a>
+      <a mat-list-item href="#">Link 2</a>
+      <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <button
+        type="button"
+        aria-label="Toggle sidenav"
+        mat-icon-button
+        (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+      <span>pj01</span>
+    </mat-toolbar>
+    Add Content Here
+  </mat-sidenav-content>
+</mat-sidenav-container> -->
+
+<!-- <mat-sidenav-container>	 -->
+		<!-- <button (click)="opened = !opened">Toggle</button>
+    <button (click)="sidenav.open()">open</button> -->
+    <mat-toolbar>
+		<mat-toolbar-row>
+        <img class="logo" height="80" src="../assets/img/logo.png">         
+      <div class="topnav-right">
+        <a>เจริญวัฒนา ฮาร์ดแวร์</a>
+       <a mat-icon class="material-icons md-light" routerLink="/home">home</a> 
+        <a mat-icon class="material-icons md-light" routerLink="/">notifications</a>
+      </div>
+    </mat-toolbar-row>
+    <mat-toolbar-row class="undernav">
+      <mat-icon class="material-icons hamburger"  (click)="opened = !opened">menu</mat-icon>  
+      <a class="topnav-font">ยินดีต้อนรับ, </a>
+      <div class="topnav-right">
+        <!-- logout  -->
+        <span class="logout" routerLink="/login">ออกจากระบบ</span>
+        <img class="topnav-right" routerLink="/profile" id="icon" src="../assets/img/user-cog-solid.png">
+      </div>
+    </mat-toolbar-row>
+      </mat-toolbar>
+      
+  <mat-sidenav #sidenav mode="over" [(opened)]="opened">
+    <mat-toolbar>    
+      <mat-icon class="material-icons md-light" (click)="sidenav.close()">close</mat-icon> 
+    </mat-toolbar>
+    <mat-nav-list>
+    <a mat-list-item href="#">Link 1</a>
+    <a mat-list-item href="#">Link 2</a>
+    <a mat-list-item href="#">Link 3</a>
+    </mat-nav-list>
+    </mat-sidenav> 
+    
+<!-- </mat-sidenav-container> -->

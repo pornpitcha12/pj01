@@ -1,0 +1,30 @@
+.sidenav{
+    width: 200px;
+    height: 100%;
+    background-color: #0e1d4b;
+    text-align: center;
+    /* overflow: hidden; */
+    color: #fff;
+    text-decoration: none;
+    font-size: 26px;
+    font-family: 'TH Sarabun New';
+}
+.mat-toolbar{
+  background-color: #0e1d4b;
+
+}
+
+  .hamburger {
+    font-family: 'Material Icons';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    background-color: transparent;
+    color: #fff;
+    padding: 5px 20px 5px 15px;
+    cursor: pointer;
+  }
+  

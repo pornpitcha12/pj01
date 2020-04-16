@@ -1,0 +1,96 @@
+<!-- <p>addproduct-user works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header-user></app-header-user> -->
+<div class="grid-container-layout">
+  <div class="grid-item-layout item1">
+    <div class="ex1-cat">หมวดหมู่</div>
+    <div class="ex2-cat">
+      <a class="op"><B>อุปกรณ์ก่อสร้าง</B></a><br>
+      <a class="op" href="#">&emsp;สี</a><br>
+      <a class="op" href="#">&emsp;ประปา</a><br>
+      <a class="op" href="#">&emsp;ไฟฟ้า</a><br>
+      <a class="op" href="#">&emsp;เครื่องมือช่าง</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item3">
+    <div class="ex1-op">ตัวเลือก</div>
+    <div class="ex2-op">
+      <a class="op" routerLink="/mystock-user" >สินค้าทั้งหมด</a><br>
+      <a class="op1">เพิ่มสินค้า</a><br>
+      <a class="op" routerLink="/addnewproduct-user">เพิ่มสินค้าใหม่</a><br>
+      <!-- <a class="op" routerLink="/delete-product">ลบสินค้า</a><br> -->
+      <a class="op" routerLink="/editproduct-user">แก้ไขสินค้า</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item2">
+    <div class="search-bar">
+       <input type="text" class="searchTerm-bar" ngModel appAutofocus placeholder="ค้นหาสินค้า ... ">
+       <button type="submit" class="searchButton-bar">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div>
+
+
+  <!-- <div class="grid-item-layout item2"> -->
+    <div class="ex3">เพิ่มสินค้า</div>
+      <div class="ex4">
+
+      <form action="" method="GET">
+        <div class="grid-container-add">
+          <div class="item-add1">
+            <img class="imgAdd" src="../assets/img/7355.jpeg" >
+            <br><a class="img">แก้ไขรูปภาพ</a>
+          </div>
+
+          <!-- ต้องดึงมาโชว์เลย -->
+
+          <div class="item-add2">
+
+              <a class="input">รหัสสินค้า</a><br>
+              <input type="text-add" id="prodectNo" name="product_no" placeholder="รหัสสินค้า .."><br>
+              <a class="input">ชื่อสินค้า</a><br>
+              <input type="text-add" id="productName" name="product_name" placeholder="ชื่อสินค้า .."><br>
+              <a class="input">ขนาด</a><br>
+              <input type="text-add" id="size" name="size" placeholder="ขนาด .."><br>
+              <a class="input">รายละเอียดอื่นๆ</a><br>
+              <input type="text-add" id="detail" name="detail" placeholder="อื่นๆ .."><br>
+              <a class="input">วันสินค้าเข้า</a><br>
+              <input type="text-add" id="arrive" name="arrive" placeholder="วันสินค้าเข้า .."><br>
+              <a class="input">ชื่อผู้รับ</a><br>
+              <input type="text-add" id="consignee" name="consignee" placeholder="ชื่อผู้รับ .."><br>
+              <!-- <a class="input">Country</a><br>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select> -->
+
+          </div>
+          <!-- ต้องดึงมาโชว์เลย -->
+          <div class="item-add3">
+              <a class="input">Barcode</a><br>
+              <input type="text-add" id="barcode" name="barcode" placeholder="barcode .."><br>
+              <a class="input">ยี่ห้อ</a><br>
+              <input type="text-add" id="brand" name="brand" placeholder="ยี่ห้อ .."><br>
+              <a class="input">สี</a><br>
+              <input type="text-add" id="color" name="color" placeholder="สี .."><br>
+              <a class="input">วันหมดอายุ</a><br>
+              <input type="text-add" id="expired" name="expired" placeholder="วันหมดอายุ .."><br>
+              <a class="input" style="color:red;">จำนวน</a><br>
+              <input type="text-add" id="amount" name="amount" placeholder="จำนวน .."><br>
+
+            <!-- <a class="reset" type="reset" value="ยกเลิก">ยกเลิก</a> -->
+            <button type="submit-add" value="ยืนยัน">ยืนยัน</button>
+            <input type="reset" value="ยกเลิก">
+
+          </div>
+
+        </div>
+
+      </form>
+      </div>
+
+
+</div>

@@ -1,0 +1,33 @@
+<title> STORE STOCK |  </title>
+<mat-toolbar>
+<div class="header-all">
+  <div class="header" role="banner">
+    <img height="80" src="../assets/img/logo.png">
+  <!-- home icon -->
+  <div class="spacer"></div>
+  <a class="nameshop">เจริญวัฒนา ฮาร์ดแวร์</a>
+    <img  class="home-bell-logo" routerLink="/home" src="../assets/img/home.png">
+    <img class="home-bell-logo"   mat-raised-button color="primary" [mdePopoverTriggerFor]="appPopover"
+    mdePopoverTriggerOn="click" #popoverTrigger="mdePopoverTrigger" src="../assets/img/bell.png">
+    <mde-popover #appPopover="mdePopover" [mdePopoverOverlapTrigger]="false">
+      <mat-card>
+        <mat-card-content>
+          <mat-card-title class="noti-header">การแจ้งเตือน</mat-card-title> <!-- อาจมีเลขจำนวนnoti -->
+        <hr>
+          <div>
+            <a class="noti-name">ยาแนว</a><a class="noti-name">สีขาว</a>
+            <a class="noti-detail1">สินค้าใกล้หมด</a><hr>
+          </div>
+          <div>
+            <a class="noti-name">สี National</a><a class="noti-name">สีดำ</a>
+            <a class="noti-detail2">สินค้าใกล้หมดอายุ</a><hr>
+          </div>
+        </mat-card-content>
+      </mat-card>
+    </mde-popover>
+
+
+  </div>
+
+</div>
+</mat-toolbar>

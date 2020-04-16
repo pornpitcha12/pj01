@@ -1,0 +1,67 @@
+<!-- <p>HOME BEAMBER!</p> -->
+<title> STORE STOCK | home-admin </title>
+<!-- Toolbar -->
+<!-- <app-header></app-header> -->
+<!-- <app-side-nav></app-side-nav> -->
+<body>
+<div class="grid-container">
+
+<!-- stock -->
+  <div class="grid-item item1-box">
+      <div class="menuBox" routerLink="/mystock" routerLinkActive="active" >
+          <img src="../assets/img/warehouse (2).png">
+          <div class="home">คลังสินค้า</div>
+      </div>
+  </div>
+
+<!-- find my product -->
+  <div class="grid-item item2-box">
+        <div class="menuBox" routerLink="/findproduct" routerLinkActive="active">
+            <img src="../assets/img/search.png">
+            <div class="home">ค้นหาสินค้า</div>
+        </div>
+  </div>
+
+  <!-- factory -->
+  <div class="grid-item item3-box">
+           <div class="menuBox" routerLink="/factory" routerLinkActive="active">
+            <img src="../assets/img/delivery-truck (2).png">
+            <div class="home">โรงงาน</div>
+        </div>
+  </div>
+
+<!-- billing -->
+  <div class="grid-item item4-box">
+      <div class="menuBox" routerLink="/billing" routerLinkActive="active">
+            <img src="../assets/img/calculator (1).png">
+            <div class="home">คิดเงิน</div>
+      </div>
+  </div>
+
+  <!-- Dashboard -->
+  <div class="grid-item item5-box">
+       <div class="menuBox" routerLink="/dashboard" routerLinkActive="active">
+            <img src="../assets/img/presentation.png">
+            <div class="home">รายงาน</div>
+        </div>
+   </div>
+
+  <!-- list order -->
+  <div class="grid-item item6-box">
+        <div class="menuBox" routerLink="/list" routerLinkActive="active">
+            <img src="../assets/img/clipboard.png">
+            <div class="home">รายการสั่งซื้อ</div>
+        </div>
+    </div>
+    <div class="grid-right-em em1 ">
+      <div class="em-icon" routerLink="/employee" routerLinkActive="active">
+        <img src="../assets/img/man.png">
+        <a class="em-icon">พนักงาน</a>
+      </div>
+  </div>
+</div>
+
+
+</body>
+<router-outlet></router-outlet>
+

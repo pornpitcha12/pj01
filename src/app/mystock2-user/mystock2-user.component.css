@@ -1,0 +1,86 @@
+/*//////////////////////// mystock 2 page ///////////////////*/
+.grid-container-img {
+    display: grid;
+    grid-gap: 30px 30px;
+    grid-template-columns: auto auto auto ;
+    grid-template-rows: auto;
+    padding: 20px 20px ;
+    cursor: pointer;
+  }
+  
+  .grid-item-img {
+    /* height: 160px; */
+    /* padding: 20px; */
+    /* font-size: 30px; */
+    /* text-align: center; */
+    /* cursor: pointer; */
+    background-color: transparent;
+  }
+  
+  
+  .item1-img {
+    grid-column: 1 ;
+    grid-row: 1 ;
+    /* background-color: #F7F7F7; */
+  }
+  
+  .item2-img {
+    grid-column: 2 ;
+    grid-row: 1 / 3 ;
+    /* background-color: #F7F7F7; */
+  
+  }
+  .item3-img {
+    grid-column: 1 ;
+    grid-row: 2;
+    /* background-color: #F7F7F7; */
+  }
+  .text-block {
+    position: absolute;
+    /* bottom: 20px;
+    right: 20px; */
+    color: #000;
+    /* padding-left: 20px;
+    padding-right: 20px; */
+  }
+  
+  img.stock {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    border: 2px solid #757575;
+    float: left;
+    /* margin: 10px; */
+  }
+  a.nameHead{
+    color: #000;
+    font-size: 24px;
+    font-family:'TH Sarabun New';
+    padding-left: 15px;
+    line-height: 25px;
+    font-weight: bold;
+  }
+  
+  a.nameSub{
+    color: #000;
+    font-size: 24px;
+    font-family:'TH Sarabun New';
+    padding-left: 10px;
+    line-height: 25px;
+  
+    /* font-weight: bold; */
+  }
+  
+  img.delete{
+    width: 20px;
+    height: 20px;
+   }
+  
+   th.delete{
+     color: black;
+     background-color: #f4caca;
+   }
+  
+  
+  
+  

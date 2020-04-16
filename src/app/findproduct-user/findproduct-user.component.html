@@ -1,0 +1,49 @@
+<!-- <p>findproduct-user works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header-user></app-header-user> -->
+<div class="grid-container-findname">
+  <!-- product image -->
+  <div class="grid-item-Fimg item0">
+        <img class="Fimg" src="../assets/img/Art.png" >
+  </div>
+
+  <!-- search bar  -->
+  <div class="grid-item-findname item1">
+    <div class="search-bar">
+      <input type="text" class="searchTerm-bar" [(ngModel)]="searchProduct" appAutofocus placeholder="ค้นหาด้วยสินค้า / บาร์โค้ด ... ">
+      <input type="submit" value="ค้นหา" class="searchButton-bar search-bar-button" (click)="findProduct()">
+         <img routerLink="/findimage-user" class="Fimg-2" src="../assets/img/cam2.png">
+    </div>
+  </div>
+
+  <div class="grid-item-findname item2">
+   <div class="ex3-findname">ข้อมูลสินค้า</div>
+    <div class="ex4-findname">
+        <div class="grid-content">
+          <div class="grid-item-content item1-c">
+            <a class="nameHead">ชื่อสินค้า:</a><a class="nameSub">{{product.product_name}}</a><br>
+            <a class="nameHead">ยี่ห้อ:</a><a class="nameSub">{{product.brand}}</a><br>
+            <a class="nameHead">ขนาด:</a><a class="nameSub">{{product.size}}</a><br>
+            <a class="nameHead">รายละเอียดอื่นๆ:</a><a class="nameSub">{{product.description}}</a><br>
+
+            <a class="nameHead">ชื่อโรงงาน:</a><a class="nameSub">{{product.factory_name}}</a><br>
+            <a class="nameHead">ราคาขาย:</a><a class="nameSub">{{product.price}}</a><br>
+            <a class="nameHead">สินค้าในคลัง:</a><a class="nameSub">{{product.stock_number}}</a>
+
+          </div>
+          <div class="grid-item-content item2-c">
+            <a class="nameHead">Barcode:</a><a class="nameSub">{{product.barcode}}</a><br>
+            <a class="nameHead">ประเภท:</a><a class="nameSub">{{product.category_name}}</a><br>
+            <a class="nameHead">สี:</a><a class="nameSub">{{product.color}}</a><br>
+            <a class="nameHead">ราคาทุน:</a><a class="nameSub">{{product.cost}}</a><br>
+            <a class="nameHead">ตำเเหน่งสินค้า:</a><a class="nameSub">{{product.zone}} {{product.shelf_name}} {{product.shelf_layer}}</a><br>
+            <a herf="#" class="plan" (click)="openDialog()" >คลิกเพื่อดูแผนผัง</a>
+          </div>
+        </div>
+    </div>
+  </div>
+
+
+</div>
+
+

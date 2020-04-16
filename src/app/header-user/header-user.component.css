@@ -1,0 +1,83 @@
+
+.mat-toolbar-row, .mat-toolbar-single-row {
+    height: 80px;
+    display: block;
+    box-sizing: border-box;
+    padding: 0px;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    white-space: nowrap;
+}
+
+mat-menu{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #3B4F85;
+
+}
+
+button.mat-menu-item {
+    width: 200px;
+    color: #3B4F85;
+    text-align: left;
+    /* padding: 10px; */
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'TH Sarabun New';
+    padding-left: 30px;
+    padding-right: 30px ;
+}
+
+.icon{
+    width: 10px;
+    height: 10px;
+}
+
+.mat-card {
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1);
+  display: block;
+  width: 250px;
+  position: relative;
+  padding: 16px;
+  border-radius: 4px;
+}
+.mat-card-title{
+  margin: 0px;
+}
+
+.noti-header{
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'TH Sarabun New';
+    color: #000;
+}
+.noti-name{
+    font-size: 20px;
+    /* font-weight: bold; */
+    font-family: 'TH Sarabun New';
+    color: #000;
+    padding-right: 10px;
+}
+.noti-name2{
+  font-size: 20px;
+  font-family: 'TH Sarabun New';
+  color: #000;
+  padding-right: 10px;
+}
+
+.noti-detail1{
+    font-size: 20px;
+    font-family: 'TH Sarabun New';
+    color: red;
+    float: right;
+
+}
+
+.noti-detail2{
+  font-size: 20px;
+  font-family: 'TH Sarabun New';
+  color: cornflowerblue;
+  float: right;
+}

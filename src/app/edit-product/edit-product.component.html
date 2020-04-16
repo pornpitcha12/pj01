@@ -1,0 +1,228 @@
+<!-- <p>edit-product works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header></app-header> -->
+<div class="grid-container-layout">
+  <div class="grid-item-layout item1">
+    <div class="ex1-cat">หมวดหมู่</div>
+    <div class="ex2-cat">
+      <a class="op"><B>อุปกรณ์ก่อสร้าง</B></a><br>
+      <a class="op" href="#">&emsp;สี</a><br>
+      <a class="op" href="#">&emsp;ประปา</a><br>
+      <a class="op" href="#">&emsp;ไฟฟ้า</a><br>
+      <a class="op" href="#">&emsp;เครื่องมือช่าง</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item3">
+    <div class="ex1-op">ตัวเลือก</div>
+    <div class="ex2-op">
+      <a class="op" routerLink="/mystock" >สินค้าทั้งหมด</a><br>
+      <a class="op" routerLink="/add-product" >เพิ่มสินค้า</a><br>
+      <a class="op" routerLink="/add-newproduct">เพิ่มสินค้าใหม่</a><br>
+      <!-- <a class="op" routerLink="/delete-product">ลบสินค้า</a><br> -->
+      <a class="op1" >แก้ไขสินค้า</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item2">
+    <div class="search-bar">
+       <input type="text" class="searchTerm-bar" ngModel appAutofocus placeholder="ค้นหาสินค้า ... ">
+       <button type="submit" class="searchButton-bar">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div>
+
+    <div class="ex3">แก้ไขรายการสินค้า</div>
+      <div class="fixed_header">
+      <table>
+        <thead>
+        <tr>
+          <th>รหัสสินค้า</th>
+          <th>ยี่ห้อ</th>
+          <th>ชื่อ</th>
+          <th>ขนาด</th>
+          <th>สี</th>
+          <th>จำนวน</th>
+          <th>อื่นๆ</th>
+          <th>ราคาขาย</th>
+          <th>โรงงาน</th>
+          <th class="edit">แก้ไข</th>
+          <th class="edit">ลบ</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>A00001</td>
+          <td>Loren em</td>
+          <td>pipe</td>
+          <td>1/2 นิ้ว</td>
+          <td>ฟ้า</td>
+          <td>20</td>
+          <td>-</td>
+          <td>45</td>
+          <td>ช.วุฒิกร</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>N66255</td>
+          <td>National</td>
+          <td>แม่สี</td>
+          <td>1/4 GL</td>
+          <td>Forest green (395)</td>
+          <td>30</td>
+          <td>-</td>
+          <td>120</td>
+          <td>โรงงานสีเดลต้า จำกัด</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>N56279</td>
+          <td>National</td>
+          <td>สีเคลือบน้ำมันเงา</td>
+          <td>1/4 GL</td>
+          <td>Royal blue (706)</td>
+          <td>30</td>
+          <td>-</td>
+          <td>97</td>
+          <td>โรงงานสีเดลต้า จำกัด</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>J0591</td>
+          <td>Beger</td>
+          <td>สีย้อมไม้ชนิดเงา</td>
+          <td>1/4 GL</td>
+          <td>สีมะฮอกกานี</td>
+          <td>20</td>
+          <td>-</td>
+          <td>280</td>
+          <td>สีเบเยอร์</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>T106273</td>
+          <td>KOBE</td>
+          <td>สีสเปร์ย</td>
+          <td>400 CC</td>
+          <td>ดำ</td>
+          <td>50</td>
+          <td>-</td>
+          <td>50</td>
+          <td>กุลวัฒน์ พานิชย์ ฮาร์ดแวร์</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>ป1516173</td>
+          <td>DOG</td>
+          <td>กาวสารพัดประโยชน์ x-66</td>
+          <td>200 ml</td>
+          <td>-</td>
+          <td>30</td>
+          <td>-</td>
+          <td>65</td>
+          <td>บริษัท เฮงรุ่งเรือง H.R.R</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>T9929</td>
+          <td>TOA</td>
+          <td>กาวลาเท็กซ์</td>
+          <td>16 ออนซ์</td>
+          <td>ขาว</td>
+          <td>20</td>
+          <td>-</td>
+          <td>65</td>
+          <td>กุลวัฒน์ พานิชย์ ฮาร์ดแวร์</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>M76261</td>
+          <td>3M</td>
+          <td>เทปพันสายไฟ</td>
+          <td>10 M</td>
+          <td>ดำ</td>
+          <td>60</td>
+          <td>-</td>
+          <td>30</td>
+          <td>S.V.C ฮาร์ดแแวร์</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>R16121</td>
+          <td>Makita</td>
+          <td>ใบเจียร</td>
+          <td>4"</td>
+          <td>-</td>
+          <td>50</td>
+          <td>-</td>
+          <td>35</td>
+          <td>นำเฮง ฮาร์ดแวร์</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>JK904</td>
+          <td>จระเข้</td>
+          <td>ยาแนว กันรา</td>
+          <td>1 kg</td>
+          <td>ขาวไข่มุก</td>
+          <td>50</td>
+          <td>-</td>
+          <td>65</td>
+          <td>นำเฮง ฮาร์ดแวร์</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>ป146259</td>
+          <td>WD-40</td>
+          <td>WD-40</td>
+          <td>191 ML</td>
+          <td>-</td>
+          <td>30</td>
+          <td>-</td>
+          <td>160</td>
+          <td>บริษัท เฮงรุ่งเรือง H.R.R</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>T1062511</td>
+          <td>KOBE-30</td>
+          <td>ลวดเชื่อมเหล็ก</td>
+          <td>2.6x350 mm</td>
+          <td>-</td>
+          <td>30</td>
+          <td>-</td>
+          <td>150</td>
+          <td>กุลวัฒน์ พานิชย์ ฮาร์ดแวร์</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>ช2216036</td>
+          <td>Sanwa</td>
+          <td>บอลวาล์ว ฟลูเบอร์</td>
+          <td>1/2"</td>
+          <td>-</td>
+          <td>30</td>
+          <td>-</td>
+          <td>160</td>
+          <td>ช.วุฒิกร</td>
+          <td class="edit-product"><img class="delete" routerLink="/edit-productdetail" src="../assets/img/pen.png"></td>
+          <td class="edit-product"><img class="delete" src="../assets/img/delete.png"></td>
+        </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </div>
+</div>

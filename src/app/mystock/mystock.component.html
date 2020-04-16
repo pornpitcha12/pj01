@@ -1,0 +1,116 @@
+<!-- Toolbar -->
+<!-- <app-header></app-header> -->
+<!-- <app-side-nav></app-side-nav> -->
+<!-- <body> -->
+<div class="grid-container-layout">
+  <div class="grid-item-layout item1">
+    <div class="ex1-cat">หมวดหมู่</div>
+    <div class="ex2-cat">
+      <a class="op"><B>อุปกรณ์ก่อสร้าง</B></a><br>
+      <a class="op" href="#">&emsp;สี</a><br>
+      <a class="op" href="#">&emsp;ประปา</a><br>
+      <a class="op" href="#">&emsp;ไฟฟ้า</a><br>
+      <a class="op" href="#">&emsp;เครื่องมือช่าง</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item3">
+    <div class="ex1-op">ตัวเลือก</div>
+    <div class="ex2-op">
+      <a class="op1" routerLink="/mystock" >สินค้าทั้งหมด</a><br>
+      <a class="op" routerLink="/add-product" >เพิ่มสินค้า</a><br>
+      <a class="op" routerLink="/add-newproduct">เพิ่มสินค้าใหม่</a><br>
+      <!-- <a class="op" routerLink="/delete-product">ลบสินค้า</a><br> -->
+      <a class="op" routerLink="/edit-product">แก้ไขสินค้า</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item2">
+    <div class="search-bar">
+       <input 
+          type="text" 
+          class="searchTerm-bar" 
+          [(ngModel)]="searchProductName"
+          (ngModelChange)="onChangeInput()" 
+          appAutofocus
+          placeholder="ค้นหาสินค้า ... ">
+       <button type="submit" class="searchButton-bar" (click)="findProductName()">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div>
+
+  <!-- <div class="grid-item-layout item2"> -->
+    <div class="ex3">รายการสินค้า
+      <img class="sea" routerLink="/mystock2" src="../assets/img/4-rounded-squares.png">
+      <div class="search-container">
+        <!-- <form action="/">
+          <input type="text" placeholder="ค้นหา.." name="search">
+            <img class="sea" src="../assets/img/sea.png">
+            <img class="sea" onclick="myFunction()" src="../assets/img/list.png">
+        </form>
+
+        <form id="demo-2">
+          <input type="search" placeholder="Search">
+          <img class="sea" type="submit" src="../assets/img/sea.png">
+        </form> -->
+      </div>
+    </div>
+
+      <div class="fixed_header">
+      <table>
+        <thead>
+        <tr>
+          <th>รหัสสินค้า</th>
+          <th>ยี่ห้อ</th>
+          <th>ชื่อสินค้า</th>
+          <th>ขนาด</th>
+          <th>สี</th>
+          <th>จำนวน</th>
+          <th>วันหมดอายุ</th>
+          <th>อื่นๆ</th>
+          <th>ต้นทุน</th>
+          <th>ราคาขาย</th>
+          <th>วันสินค้าเข้า</th>
+          <th>โรงงาน</th>
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngIf="searchProduct != null ">
+            <tr>
+              <td>{{searchProduct.product_id}}</td>
+              <td>{{searchProduct.brand}}</td>
+              <td>{{searchProduct.product_name}}</td>
+              <td>{{searchProduct.size}}</td>
+              <td>{{searchProduct.color}}</td>
+              <td>{{searchProduct.stock_number}}</td>
+              <td>{{searchProduct.expired_date}}</td>
+              <td>{{searchProduct.description}}</td>
+              <td>{{searchProduct.price}}</td>
+              <td>{{searchProduct.cost}}</td>
+              <td>2019-06-01</td>
+              <td>{{searchProduct.factory_name}}</td>
+            </tr>
+        </ng-container>
+        <ng-container *ngIf="searchProductName == '' || searchProductName == null || searchProduct == null">
+            <tr *ngFor="let product of products">
+              <td>{{product.product_id}}</td>
+              <td>{{product.brand}}</td>
+              <td>{{product.product_name}}</td>
+              <td>{{product.size}}</td>
+              <td>{{product.color}}</td>
+              <td>{{product.stock_number}}</td>
+              <td>{{product.expired_date}}</td>
+              <td>{{product.description}}</td>
+              <td>{{product.price}}</td>
+              <td>{{product.cost}}</td>
+              <td>2019-06-01</td>
+              <td>{{product.factory_name}}</td>
+            </tr>
+        </ng-container>
+      </tbody>
+    </table>
+    </div>
+  </div>
+
+</div>
+<!-- </body> -->

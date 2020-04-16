@@ -1,0 +1,83 @@
+<!-- <p>mystock2 works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header></app-header> -->
+<div class="grid-container-layout">
+  <div class="grid-item-layout item1">
+    <div class="ex1-cat">หมวดหมู่</div>
+    <div class="ex2-cat">
+      <a class="op"><B>อุปกรณ์ก่อสร้าง</B></a><br>
+      <a class="op" href="#">&emsp;สี</a><br>
+      <a class="op" href="#">&emsp;ประปา</a><br>
+      <a class="op" href="#">&emsp;ไฟฟ้า</a><br>
+      <a class="op" href="#">&emsp;เครื่องมือช่าง</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item3">
+    <div class="ex1-op">ตัวเลือก</div>
+    <div class="ex2-op">
+      <a class="op1" routerLink="/mystock" >สินค้าทั้งหมด</a><br>
+      <a class="op" routerLink="/add-product">เพิ่มสินค้า</a><br>
+      <a class="op" routerLink="/add-newproduct">เพิ่มสินค้าใหม่</a><br>
+      <!-- <a class="op" routerLink="/delete-product">ลบสินค้า</a><br> -->
+      <a class="op" routerLink="/edit-product">แก้ไขสินค้า</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item2">
+    <div class="search-bar">
+       <input
+          type="text" 
+          class="searchTerm-bar" 
+          [(ngModel)]="searchProductName"
+          (ngModelChange)="onChangeInput()" 
+          appAutofocus
+          placeholder="ค้นหาสินค้า ... ">
+       <button type="submit" class="searchButton-bar" (click)="findProductName()">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div>
+
+
+  <!-- <div class="grid-item-layout item2"> -->
+    <div class="ex3">รายการสินค้า
+      <img class="sea" routerLink="/mystock" src="../assets/img/list.png">
+      <div class="search-container">
+        <!-- <form action="/">
+          <input type="text" placeholder="ค้นหา.." name="search">
+            <img class="sea" src="../assets/img/sea.png">
+            <img class="sea" onclick="myFunction()" src="../assets/img/list.png">
+        </form>
+
+        <form id="demo-2">
+          <input type="search" placeholder="Search">
+          <img class="sea" type="submit" src="../assets/img/sea.png">
+        </form> -->
+      </div>
+    </div>
+    <div class="ex4">
+      <div class="grid-container-img">
+        <ng-container *ngIf="searchProduct != null ">
+          <div class="grid-item-img">
+            <img class="stock" src="../assets/img/73551.jpeg" >
+                <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">{{searchProduct.product_id}}</a><br>
+                <a class="nameHead">ชื่อ:</a><a class="nameSub">{{searchProduct.product_name}}</a><br>
+                <a class="nameHead">ราคา:</a><a class="nameSub">{{searchProduct.cost}}</a>
+          </div>
+        </ng-container>
+
+        <ng-container *ngIf="searchProductName == '' || searchProductName == null || searchProduct == null">
+            <tr *ngFor="let product of products">  
+             <div class="grid-item-img">
+                <img class="stock" src="../assets/img/73551.jpeg" >
+                    <a class="nameHead">รหัสสินค้า:</a><a class="nameSub">{{product.product_id}}</a><br>
+                    <a class="nameHead">ชื่อ:</a><a class="nameSub">{{product.product_name}}</a><br>
+                    <a class="nameHead">ราคา:</a><a class="nameSub">{{product.cost}}</a>
+              </div>
+            </tr>
+          </ng-container>
+      </div>
+    </div>
+  </div>
+
+</div>

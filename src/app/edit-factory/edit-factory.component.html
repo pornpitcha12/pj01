@@ -1,0 +1,175 @@
+<!-- <p>edit-factory works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header></app-header> -->
+<div class="grid-container-fac">
+  <div class="grid-item-fac item1">
+    <div class="ex1-op-fac">ตัวเลือก</div>
+    <div class="ex2-op-fac">
+      <a class="op" routerLink="/factory" >โรงงานสินค้า</a><br>
+      <a class="op" routerLink="/add-factory">เพิ่มโรงงาน</a><br>
+      <a class="op1">แก้ไขโรงงาน</a><br>
+    </div>
+  </div>
+  <div class="grid-item-layout item2">
+    <div class="search-bar">
+       <input type="text" class="searchTerm-bar" ngModel appAutofocus placeholder="ค้นหาโรงงาน ... ">
+       <button type="submit" class="searchButton-bar">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div>
+    <div class="grid-item-fac item2">
+      <div class="ex3-fac">แก้ไขข้อมูลโรงงาน</div>
+        <div class="fixed_header_fac">
+        <table>
+          <thead>
+          <tr>
+            <th >รหัสโรงงาน</th>
+            <th >ชื่อโรงงาน</th>
+            <th >ที่อยู่</th>
+            <th >เบอร์ติดต่อ</th>
+            <th >Line ID</th>
+            <th >ชื่อผู้ขาย</th>
+            <th >เบอร์ติดต่อผู้ขาย</th>
+            <th class="edit-fac">แก้ไข</th>
+            <th class="edit-fac">ลบ</th>
+          </tr>
+        </thead>
+          <tbody>
+          <tr>
+            <td>FC001</td>
+            <td>โรงงานสีเดลต้า จำกัด</td>
+            <td>187 ซ.ฉลองกรุง31 เเขวงลำปลาทิว เขตลาดกระบัง</td>
+            <td>027397101</td>
+            <td>-</td>
+            <td>คุณวี</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC002</td>
+            <td>โรงงานนวพลาสติก อุตสาหกรรม(สระบุรี) จำกัด</td>
+            <td>1 ถ.ปูนซีเมนต์ไทย บางซื่อ กรุงเทพมหานคร 10800</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC003</td>
+            <td>บริษัทสี่ทิศฮาร์ดเเวร์ จำกัด</td>
+            <td> จำกัด 59 434-435 ถ.พระราม2 ท่าข้าม บางขุนเทียน กรุงเทพ</td>
+            <td>-</td>
+            <td></td>
+            <td>-</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC004</td>
+            <td>บริษัทซิกนิฟายคอมเมอร์เชียล(ประเทศไทย) จำกัด</td>
+            <td>1768 ชั้น 26 อาคารไทซัมมมิททาวเวอร์ ถ.เพชรบุรีตัดใหม่ เเขวงบางกะปิ เขตห้วยขวาง กทม 10310</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC005</td>
+            <td>กุลวัฒน์ พานิชย์ ฮาร์ดแวร์</td>
+            <td>125 มบ.ดีเค ช.พระยามยธาตุแยก29 ถ.กาญจนาภิเษก แขวงบางบอน เขตบางบอน กทม.  </td>
+            <td>0244177712</td>
+            <td>-</td>
+            <td>คุณตี๋(ปรีชา)</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC006</td>
+            <td>นำเฮง ฮาร์ดแวร์</td>
+            <td>-</td>
+            <td>024661869</td>
+            <td>-</td>
+            <td>คุณสี่</td>
+            <td>0898615449</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC007</td>
+            <td>บริษัท KS deli tools</td>
+            <td>-</td>
+            <td>0894778494</td>
+            <td>-</td>
+            <td>คุณปัทมา วรานุธิ</td>
+            <td>0944807445</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC008</td>
+            <td>บริษัท เฮงรุ่งเรือง H.R.R</td>
+            <td>กรุงเทพมหานคร</td>
+            <td>0211316434</td>
+            <td>-</td>
+            <td>คุณปอ</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC009</td>
+            <td>S.V.C ฮาร์ดแแวร์</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>คุณหมง-คุณวิเชีย</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC010</td>
+            <td>บริษัท โพลา จำกัด</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>คุณโป้ง</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC011</td>
+            <td>บริษัท วายเคที จำกัด</td>
+            <td>1644/1ถ.สุรนารายณ์ ต.ในเมือง อ.เมือง จ.นตรราชสีมา</td>
+            <td>044296055</td>
+            <td>-</td>
+            <td>คุณกิตติพล ศรีนา</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>FC012</td>
+            <td>โปรเฮ้าส์ ฮาร์ดแวร์</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>คุณธรรมนูญ</td>
+            <td>-</td>
+            <td class="edit-fac"><img class="edit-fac" routerLink="/edit-factorydetail" src="../assets/img/pen.png"></td>
+            <td class="edit-fac"><img class="edit-fac" src="../assets/img/delete.png"></td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+  </div>
+</div>
+</div>

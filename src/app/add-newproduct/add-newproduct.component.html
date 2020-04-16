@@ -1,0 +1,120 @@
+<!-- <p>add-newproduct works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header></app-header> -->
+<div class="grid-container-layout">
+  <div class="grid-item-layout item1">
+    <div class="ex1-cat">หมวดหมู่</div>
+    <div class="ex2-cat">
+      <a class="op"><B>อุปกรณ์ก่อสร้าง</B></a><br>
+      <a class="op" href="#">&emsp;สี</a><br>
+      <a class="op" href="#">&emsp;ประปา</a><br>
+      <a class="op" href="#">&emsp;ไฟฟ้า</a><br>
+      <a class="op" href="#">&emsp;เครื่องมือช่าง</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item3">
+    <div class="ex1-op">ตัวเลือก</div>
+    <div class="ex2-op">
+      <a class="op" routerLink="/mystock" >สินค้าทั้งหมด</a><br>
+      <a class="op" routerLink="/add-product">เพิ่มสินค้า</a><br>
+      <a class="op1" >เพิ่มสินค้าใหม่</a><br>
+      <!-- <a class="op" routerLink="/delete-product">ลบสินค้า</a><br> -->
+      <a class="op" routerLink="/edit-product">แก้ไขสินค้า</a>
+    </div>
+  </div>
+
+  <div class="grid-item-layout item2">
+    <!-- <div class="search-bar">
+       <input type="text" class="searchTerm-bar" placeholder="ค้นหาสินค้า ... ">
+       <button type="submit" class="searchButton-bar">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div> -->
+
+
+  <!-- <div class="grid-item-layout item2"> -->
+    <div class="ex3">เพิ่มสินค้าใหม่</div>
+      <div class="ex4-addnew-product">
+
+      <form action="" method="GET">
+        <div class="grid-container-addnew">
+          <div class="item-addnew1">
+            <img class="imgAdd" src="../assets/img/7357.jpg" >
+            <br><a class="img">เลือกรูปภาพ</a>
+          </div>
+
+          <!-- ต้องดึงมาโชว์เลย -->
+
+          <div class="item-addnew2">
+
+              <a class="input">รหัสสินค้า</a><br>
+              <input type="text-addnew" id="prodectNo" name="product_no" placeholder="รหัสสินค้า .."><br>
+              <a class="input">ชื่อสินค้า</a><br>
+              <input type="text-addnew" id="productName" name="product_name" placeholder="ชื่อสินค้า .."><br>
+              <a class="input">ขนาด</a><br>
+              <input type="text-addnew" id="size" name="size" placeholder="ขนาด .."><br>
+              <a class="input">รายละเอียดอื่นๆ</a><br>
+              <input type="text-addnew" id="detail" name="detail" placeholder="อื่นๆ .."><br>
+              <a class="input">ราคาทุน</a><br>
+              <input type="text-addnew" id="cost" name="cost" placeholder="ราคาทุน .."><br>
+              <a class="input">วันสินค้าเข้า</a><br>
+              <input type="text-addnew" id="arrive" name="arrive" placeholder="วันสินค้าเข้า .."><br>
+              <a class="input">ตำแหน่งสินค้า</a><br>
+              <select id="location" name="location" placeholder="ตำแหน่งสินค้า ..">
+                <option type="text-editproduct" value="none" >ตำแหน่งสินค้า ..</option>
+                <option value="A01" >A01</option>
+                <option value="A02" >A02</option>
+              </select>
+              <a class="input">ชื่อผู้รับ</a><br>
+              <input type="text-addnew" id="consignee" name="consignee" placeholder="ชื่อผู้รับ .."><br>
+              <!-- <a class="input">Country</a><br>
+              <select id="country" name="country">
+                <option value="australia">Australia</option>
+                <option value="canada">Canada</option>
+                <option value="usa">USA</option>
+              </select> -->
+
+          </div>
+          <!-- ต้องดึงมาโชว์เลย -->
+          <div class="item-addnew3">
+              <a class="input">Barcode</a><br>
+              <input type="text-addnew" id="barcode" name="barcode" placeholder="barcode .."><br>
+              <a class="input">ยี่ห้อ</a><br>
+              <input type="text-addnew" id="brand" name="brand" placeholder="ยี่ห้อ .."><br>
+              <a class="input">สี</a><br>
+              <input type="text-addnew" id="color" name="color" placeholder="สี .."><br>
+              <a class="input">โรงงานสินค้า</a><br>
+              <select id="factory" name="factory" placeholder="โรงงานสินค้า ..">
+                <option type="text-editproduct" value="none" >โรงงานสินค้า ..</option>
+                <option value="FC01" >FC01</option>
+                <option value="FC02" >FC02</option>
+              </select><br>
+              <a class="input">ราคาขาย</a><br>
+              <input type="text-addnew" id="price" name="price" placeholder="ราคาขาย .."><br>
+              <a class="input">วันหมดอายุ</a><br>
+              <input type="text-addnew" id="expired" name="expired" placeholder="วันหมดอายุ .."><br>
+              <a class="input">ประเภทสินค้า</a><br>
+              <select id="category" name="category" placeholder="ประเภทสินค้า ..">
+                <option type="text-editproduct" value="none" >ประเภทสินค้า ..</option>
+                <option value="plumbing" >อุปกรณ์ปะปา</option>
+                <option value="electronic" >อุปกรณ์ไฟฟ้า</option>
+                <option value="construction" >อุปกรณ์ก่อสร้าง</option>
+                <option value="craftsman" >เครื่องมือช่าง</option>
+              </select>
+              <a class="input" style="color:red;">จำนวน</a><br>
+              <input type="text-addnew" id="amount" name="amount" placeholder="จำนวน .."><br>
+
+            <!-- <a class="reset" type="reset" value="ยกเลิก">ยกเลิก</a> -->
+            <button type="submit-addnew" value="ยืนยัน">ยืนยัน</button>
+            <input type="reset" value="ยกเลิก">
+
+          </div>
+
+        </div>
+
+      </form>
+      </div>
+
+
+</div>

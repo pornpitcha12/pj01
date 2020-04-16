@@ -1,0 +1,57 @@
+<!-- <p>find-barcode works!</p> -->
+
+<div class="grid-container-findname">
+  <!-- product image -->
+  <div class="grid-item-Fimg item1">
+    <div class="search-bar">
+      <input type="text" [(ngModel)]="barcode" class="searchTerm-bar" placeholder="ค้นหาสินค้า ... ">
+      <button type="submit" (click)="findBarcode()" class="searchButton-bar">
+        <a class="search-bar-button">ค้นหา</a>
+     </button>
+   </div>
+  </div>
+
+  <div class="grid-item-findname item2">
+   <div class="ex3-findname">รายละเอียดสินค้า</div>
+    <div class="ex4-findname">
+      <div class="grid-content">
+        <div class="grid-item-content item1-c">
+              <a class="nameHead">ชื่อสินค้า:</a><a class="nameSub">{{bar.product_name}}</a><br>
+              <a class="nameHead">ประเภท:</a><a class="nameSub">{{bar.category_name}}</a><br>
+              <a class="nameHead">ขนาด:</a><a class="nameSub">{{bar.size}}</a><br>
+              <a class="nameHead">รายละเอียดอื่นๆ:</a><a class="nameSub">{{bar.description}}</a>
+        </div>
+        <div class="grid-item-content item2-c">
+          <a class="nameHead">ยี่ห้อ:</a><a class="nameSub">{{bar.brand}}</a><br>
+          <a class="nameHead">สี:</a><a class="nameSub">{{bar.color}}</a><br>
+          <a class="nameHead">ราคา:</a><a class="nameSub">{{bar.price}}</a>
+    </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="grid-item-findname item3">
+    <div class="ex3-findname">ข้อมูลคลังสินค้า</div>
+    <div class="ex5-findname">
+      <div class="grid-content">
+        <div class="grid-item-content item1-c">
+              <a class="nameHead">ชื่อสินค้า:</a><a class="nameSub">บอลวาล์ว PVC</a><br>
+              <a class="nameHead">ประเภท:</a><a class="nameSub">ปะปา</a><br>
+              <a class="nameHead">ขนาด:</a><a class="nameSub">1"</a><br>
+              <a class="nameHead">รายละเอียดอื่นๆ:</a><a class="nameSub"></a>
+        </div>
+
+        <div class="grid-item-content item2-c">
+          <a class="nameHead">ยี่ห้อ:</a><a class="nameSub">SCG</a><br>
+          <a class="nameHead">สี:</a><a class="nameSub">ฟ้า</a><br>
+          <a class="nameHead">ราคา:</a><a class="nameSub">65</a>
+        </div>
+      </div>
+      <img class="Fimg-1" src="../assets/img/plan.png" >
+    </div>
+  </div>
+
+
+
+</div>

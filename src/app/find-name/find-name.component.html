@@ -1,0 +1,124 @@
+<!-- !-- <p>find-name works!</p> -->
+
+<div class="grid-container-findname">
+  <!-- product image -->
+  <div class="grid-item-Fimg item0">
+        <img class="Fimg" src="../assets/img/7355.jpeg" >
+  </div>
+
+  <!-- search bar  -->
+  <div class="grid-item-findname item1">
+    <div class="search-bar">
+      <input type="text" class="searchTerm-bar" placeholder="ค้นหาด้วยสินค้า / บาร์โค้ด ... ">
+      <input type="submit" value="ค้นหา" class="searchButton-bar search-bar-button">
+         <img class="Fimg-2" src="../assets/img/cam2.png">
+    </div>
+  </div>
+
+  <div class="grid-item-findname item2">
+   <div class="ex3-findname">ข้อมูลสินค้า</div>
+    <div class="ex4-findname">
+      <div *ngIf="product !== null" class="grid-content">
+        <!-- left -->
+        <div class="grid-item-content item1-c">
+              <a class="nameHead">ชื่อสินค้า:</a><a class="nameSub">{{product_name}}</a><br>
+              <a class="nameHead">ยี่ห้อ:</a><a class="nameSub">{{product.brand}}</a><br>
+              <a class="nameHead">ขนาด:</a><a class="nameSub">{{product.size}}</a><br>
+              <a class="nameHead">รายละเอียดอื่นๆ:</a><a class="nameSub">{{product.description}}</a><br>
+
+              <a class="nameHead">ชื่อโรงงาน:</a><a class="nameSub"></a><br>
+              <a class="nameHead">ราคาขาย:</a><a class="nameSub"></a><br>
+              <a class="nameHead">สินค้าในคลัง:</a><a class="nameSub"></a>
+
+        </div>
+        <!-- Right -->
+        <div class="grid-item-content item2-c">
+          <a class="nameHead">Barcode:</a><a class="nameSub"></a><br>
+          <a class="nameHead">ประเภท:</a><a class="nameSub">{{product.category_name}}</a><br>
+          <a class="nameHead">สี:</a><a class="nameSub">{{product.color}}</a><br>
+          <a class="nameHead">ราคาทุน:</a><a class="nameSub"></a><br>
+          <a class="nameHead">ตำเเหน่งสินค้า:</a><a class="nameSub"></a><br><br>
+          <a herf="#" class="plan">คลิกเพื่อดูแผนผัง</a>
+         </div>
+        </div>
+        <!-- <div *ngIf="product !== null" class="grid-content">
+
+          <div class="grid-item-content item1-c">
+                <a class="nameHead">ชื่อสินค้า:</a><a class="nameSub">บอลวาว์ล PVC</a><br>
+                <a class="nameHead">ยี่ห้อ:</a><a class="nameSub">SCG</a><br>
+                <a class="nameHead">ขนาด:</a><a class="nameSub">1"</a><br>
+                <a class="nameHead">รายละเอียดอื่นๆ:</a><a class="nameSub"></a><br>
+
+                <a class="nameHead">ชื่อโรงงาน:</a><a class="nameSub"></a><br>
+                <a class="nameHead">ราคาขาย:</a><a class="nameSub">100</a><br>
+                <a class="nameHead">สินค้าในคลัง:</a><a class="nameSub">20</a>
+
+          </div>
+          <div class="grid-item-content item2-c">
+            <a class="nameHead">Barcode:</a><a class="nameSub">8858721533848</a><br>
+            <a class="nameHead">ประเภท:</a><a class="nameSub">อุปกรณ์ปะปา</a><br>
+            <a class="nameHead">สี:</a><a class="nameSub">ฟ้า</a><br>
+            <a class="nameHead">ราคาทุน:</a><a class="nameSub">59</a><br>
+            <a class="nameHead">ตำเเหน่งสินค้า:</a><a class="nameSub"></a><br><br>
+            <a herf="#" class="plan">คลิกเพื่อดูแผนผัง</a>
+           </div>
+          </div> -->
+    </div>
+  </div>
+
+
+  <!-- <div class="grid-item-findname item3">
+    <div class="ex3-findname">ข้อมูลคลังสินค้า</div>
+    <div class="ex5-findname">
+      <div class="grid-content">
+        <div class="grid-item-content item1-c">
+              <a class="nameHead">ราคาสินค้า:</a><a class="nameSub">บอลวาล์ว PVC</a><br>
+              <a class="nameHead">ชื่อโรงงาน:</a><a class="nameSub">ปะปา</a><br>
+              <a class="nameHead">ราคาขาย:</a><a class="nameSub">1"</a><br>
+              <a class="nameHead">สินค้าในคลัง:</a><a class="nameSub"></a>
+              <a class="nameHead">ตำเเหน่งสินค้า:</a><a class="nameSub"></a>
+        </div>
+
+        <div class="grid-item-content item2-c">
+          <a class="nameHead">Barcode NO:</a><a class="nameSub">SCG</a><br>
+          <a class="nameHead">ประเภท:</a><a class="nameSub">ฟ้า</a><br>
+          <a class="nameHead">ราคาทุน:</a><a class="nameSub">65</a>
+        </div>
+      </div>
+      <img class="Fimg-1" src="../assets/img/plan.png" >
+    </div>
+  </div> -->
+
+</div>
+
+<div class="search-icon">
+  <img height="100px"  width= "100px" src="../assets/img/search.png">
+  <div class="wrap">
+    <div class="search">
+       <input type="text" [(ngModel)]="product_name" class="searchTerm" placeholder="ค้นหาสินค้าด้วยชื่อ ... ">
+       <!-- <button type="submit" [routerLink]="['/find-name']" [state]="{ data: {name: product_name}}" class="searchButton">
+          <a class="search">ค้นหา</a>
+      </button> -->
+      <!-- <button type="submit" (click)="onSearch()" class="searchButton">
+        <a class="search">ค้นหา</a>
+    </button> -->
+    </div>
+  </div>
+</div>
+
+
+<div class="grid-container-search">
+  <div class="grid-item-search" >
+      <div class="menuBox-search" routerLink="/find-image" routerLinkActive="active">
+          <img src="../assets/img/camera-1.png">
+          <h3 class="searchBox">ค้นหาด้วยกล้อง</h3>
+      </div>
+  </div>
+
+  <div class="grid-item-search" >
+    <div class="menuBox-search" routerLink="/find-barcode" routerLinkActive="active">
+        <img src="../assets/img/barcode-1.png">
+        <h3 class="searchBox">ค้นหาด้วยบาร์โค้ด</h3>
+    </div>
+</div>
+</div>

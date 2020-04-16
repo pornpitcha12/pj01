@@ -1,0 +1,79 @@
+<!-- <p>edit-employee works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header></app-header> -->
+<div class="grid-container-em-detail">
+  <div class="grid-item-em item1">
+    <div class="ex1-op-em">ตัวเลือก</div>
+    <div class="ex2-op-em">
+      <a class="op" routerLink="/employee">พนักงาน</a><br>
+      <a class="op" routerLink="/add-employee">เพิ่มพนักงาน</a><br>
+      <a class="op1">แก้ไขพนักงาน</a><br>
+    </div>
+  </div>
+
+  <!-- search bar -->
+   <div class="grid-item-layout item2">
+    <div class="search-bar">
+       <input type="text" class="searchTerm-bar" ngModel appAutofocus placeholder="ค้นหาพนักงาน ... ">
+       <button type="submit" class="searchButton-bar">
+          <a class="search-bar-button">ค้นหา</a>
+      </button>
+    </div>
+
+
+  <div class="grid-item-em item2">
+    <div class="ex3-em">แก้ไขข้อมูลพนักงาน</div>
+      <div class="fixed_header_em">
+        <table>
+          <thead>
+          <tr>
+            <th>รหัสพนักงาน</th>
+            <th>ชื่อผู้ใช้</th>
+            <th>รหัสผู้ใช้</th>
+            <th>ชื่อพนักงาน</th>
+            <th>เบอร์ติดต่อ</th>
+            <th>ตำแหน่ง</th>
+            <th class="edit-em">แก้ไข</th>
+            <th class="edit-em">ลบ</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>EM001</td>
+            <td>beamber</td>
+            <td>1234</td>
+            <td>beamber</td>
+            <td>086555555</td>
+            <td>Admin</td>
+            <td class="edit-em"><img class="edit-em" routerLink="/edit-employeedetail" src="../assets/img/pen.png"></td>
+            <td class="edit-em"><img class="edit-em" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>EM002</td>
+            <td>Pornpitcha</td>
+            <td>3478</td>
+            <td>unun</td>
+            <td>0845121212</td>
+            <td>Admin</td>
+            <td class="edit-em"><img class="edit-em" routerLink="/edit-employeedetail" src="../assets/img/pen.png"></td>
+            <td class="edit-em"><img class="edit-em" src="../assets/img/delete.png"></td>
+          </tr>
+          <tr>
+            <td>EM003</td>
+            <td>Kunakorn</td>
+            <td>3486</td>
+            <td>kung</td>
+            <td>0822222222</td>
+            <td>User</td>
+            <td class="edit-em"><img class="edit-em" routerLink="/edit-employeedetail" src="../assets/img/pen.png"></td>
+            <td class="edit-em"><img class="edit-em" src="../assets/img/delete.png"></td>
+          </tr>
+          </tbody>
+        </table>
+    </div>
+  </div>
+
+
+
+</div>
+</div>

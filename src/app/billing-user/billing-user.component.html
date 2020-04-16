@@ -1,0 +1,92 @@
+<!-- <p>billing-user works!</p> -->
+<!-- Toolbar -->
+<!-- <app-header-user></app-header-user> -->
+<div class="grid-container-bill">
+<!-- search bar  -->
+  <div class="grid-item-bill item1">
+    <div class="search-bar">
+      <input type="text" class="searchTerm-bar" ngModel appAutofocus placeholder="รหัสสินค้า / บาร์โค้ด ... ">
+      <input type="submit" value="ค้นหา" class="searchButton-bar search-bar-button">
+        <!-- <a class="search-bar-button">ค้นหา</a> -->
+      </div>
+
+      <div class="box">วันที่</div>
+      <div class="box1">13-03-19</div>
+<!--
+      <tr *ngFor="let format of formatsDateTest">
+        <td>{{dateNowMilliseconds | date: format}}</td>
+        <td>{{format}}</td>
+      </tr> -->
+
+  </div>
+
+  <div class="grid-item-bill item2">
+    <div class="ex1-bill">
+      <table>
+        <thead>
+        <tr>
+          <th class="cal">ลำดับ</th>
+          <th class="cal">รหัสสินค้า</th>
+          <th class="cal">ชื่อสินค้า</th>
+          <th class="cal">รายละเอียด</th>
+          <th class="cal">จำนวน</th>
+          <th class="cal">ราคา</th>
+          <th class="cal">ราคารวม</th>
+          <th class="cal">ลบ</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+          <td>1</td>
+          <td>N66255</td>
+          <td>แม่สี</td>
+          <td>1/4 GL, Forest green (395) </td>
+          <td>2</td>
+          <td>120</td>
+          <td>240</td>
+          <td><img class="bill" src="../assets/img/delete.png"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>J0591</td>
+          <td>สีย้อมไม้ชนิดเงา</td>
+          <td>1/4 GL, สีมะฮอกกานี</td>
+          <td>1</td>
+          <td>280</td>
+          <td>280</td>
+          <td><img class="bill" src="../assets/img/delete.png"></td>
+        </tr>
+
+      </tbody>
+      </table>
+    </div>
+  </div>
+
+<div class="grid-item-bill item3">
+  <div class="ex2-bill">คิดเงิน</div>
+    <div class="ex3-bill">
+      <div class="grid-container-cal">
+      <a class="item1 cal">รวมราคาทั้งหมด (บาท)</a>
+      <a class="item2 cal-num">520.00</a>
+    </div>
+</div>
+<input type="submit" value="เสร็จสิ้น" class="submit-bill">
+</div>
+
+  <!-- <div class="grid-item-bill item4">
+    <input type="submit" value="เสร็จสิ้น" class="submit-bill">
+  </div> -->
+</div>
+
+
+<!-- <table>
+  <tr >
+    <th class="cal">คิดเงิน</th>
+  </tr>
+  <tr>
+    <a class="cal">รวมราคาทั้งหมด (บาท)</a>
+  </tr>
+  <tr>
+    <a class="cal-num">50.00</a>
+  </tr>
+</table> -->
